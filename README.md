@@ -12,3 +12,19 @@ Instalação
 
 1. Clone este repositório: git clone https://github.com/JoaoGabrielBr246/RustGuard.git
 2. Navegue até o diretório do projeto: cd RustGuard
+3. No terminal, use cargo run -q
+4. Digite a URL que deseja testar e escolha a opção
+
+   
+Suporte a Sistemas Operacionais
+
+O RustGuard é compatível com os seguintes sistemas operacionais:
+
+    Windows
+    macOS
+    Linux
+
+Certifique-se de ter os pré-requisitos necessários instalados em seu sistema antes de compilar e executar a ferramenta.
+Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou enviar solicitações pull para melhorias.
