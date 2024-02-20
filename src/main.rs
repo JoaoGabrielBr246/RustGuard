@@ -16,7 +16,7 @@ fn main() {
     println!("GitHub: https://github.com/JoaoGabrielBr246");
     println!("Este código é apenas para fins de estudo de programação e segurança da informação.");
     
-    println!(r"
+    println!("\x1b[32m{}\x1b[0m",r"
     __________                __     ________                       .___
     \______   \__ __  _______/  |_  /  _____/ __ _______ _______  __| _/
      |       _/  |  \/  ___/\   __\/   \  ___|  |  \__  \\_  __ \/ __ | 
