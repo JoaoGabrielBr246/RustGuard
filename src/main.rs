@@ -4,7 +4,7 @@ extern crate reqwest;
 use select::document::Document;
 use select::predicate::{Name, Attr, Comment};
 use std::io;
-use reqwest::header::{HeaderMap, HeaderName};
+use reqwest::header::HeaderMap; 
 use std::net::{TcpStream, UdpSocket, SocketAddr};
 use std::str::FromStr;
 use std::time::Duration;
@@ -144,8 +144,7 @@ fn analyze_headers(headers: &HeaderMap) {
     for (name, value) in headers.iter() {
         println!("{}: {}", name.as_str(), value.to_str().unwrap_or_default());
     }
-    
-    // Adicionando verificação de segurança adicional
+
     println!("Verificando políticas de segurança HTTP...");
 
     if let Some(csp_header) = headers.get("Content-Security-Policy") {
@@ -172,7 +171,7 @@ fn check_transport_security(url: &str) {
 fn check_open_ports(host: &str) {
     println!("Verificando portas TCP e UDP abertas para {}", host);
 
-    let common_ports: [u16; 5] = [21, 22, 80, 443, 8080]; // Exemplo de algumas portas comuns
+    let common_ports: [u16; 5] = [21, 22, 80, 443, 8080]; 
 
     println!("Portas TCP abertas:");
     for &port in common_ports.iter() {
